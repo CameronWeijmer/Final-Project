@@ -3,13 +3,11 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      primary: ["Red Hat Display", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
     colors: {
-      primary: "#52AEB2",
+      primary: "#4965d7",
       bg: "#fafafa",
-
-      primary: "#dabff3",
 
       gray: {
         100: "#f5f5f5",

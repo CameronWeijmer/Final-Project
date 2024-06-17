@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Landing from "../components/Landing.vue";
+import Landing from "../components/pages/Landing.vue";
 ---
 
-<Layout title="Our Components">
+<Layout title="Our Components" client:load>
   <main>
     <Landing />
   </main>

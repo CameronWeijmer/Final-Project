@@ -102,7 +102,7 @@
 
           <div class="bg-white shadow-lg rounded-lg p-6">
             <img
-              src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg"
+              src="https://cdn.discordapp.com/attachments/1035648773495472208/1252227047208517724/image.png?ex=667172d1&is=66702151&hm=cf9e145b1220090d0d1c7f015b2ba502403c9ffb1d948d0242587de91c9138d9&"
               alt="Service 3"
               class="w-full h-40 object-cover rounded-md"
             />

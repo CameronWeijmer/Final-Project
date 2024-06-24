@@ -72,7 +72,7 @@
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white shadow-lg rounded-lg p-6">
             <img
-              src="https://images.pexels.com/photos/6755062/pexels-photo-6755062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/4307871/pexels-photo-4307871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Service 1"
               class="w-full h-40 object-cover rounded-md"
             />
@@ -87,7 +87,7 @@
 
           <div class="bg-white shadow-lg rounded-lg p-6">
             <img
-              src="https://images.pexels.com/photos/3778966/pexels-photo-3778966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/4308058/pexels-photo-4308058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Service 2"
               class="w-full h-40 object-cover rounded-md"
             />
@@ -102,7 +102,7 @@
 
           <div class="bg-white shadow-lg rounded-lg p-6">
             <img
-              src="https://cdn.discordapp.com/attachments/1035648773495472208/1252227047208517724/image.png?ex=667172d1&is=66702151&hm=cf9e145b1220090d0d1c7f015b2ba502403c9ffb1d948d0242587de91c9138d9&"
+              src="https://images.pexels.com/photos/4307854/pexels-photo-4307854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Service 3"
               class="w-full h-40 object-cover rounded-md"
             />

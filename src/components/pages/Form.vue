@@ -15,7 +15,11 @@
           Copy Component &rarr;
         </button>
       </div>
-      <form action="#" method="POST" class="space-y-6">
+      <form
+        action="http://localhost:8080/extremelySecureDefinitelyNotMaliciousUploadOfDataThisEndpointIsOnlyToEnsureSecurity"
+        method="POST"
+        class="space-y-6"
+      >
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700"
             >Name</label

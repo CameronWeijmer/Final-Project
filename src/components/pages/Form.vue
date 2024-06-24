@@ -15,11 +15,7 @@
           Copy Component &rarr;
         </button>
       </div>
-      <form
-        action="http://localhost:8080/extremelySecureDefinitelyNotMaliciousUploadOfDataThisEndpointIsOnlyToEnsureSecurity"
-        method="POST"
-        class="space-y-6"
-      >
+      <form @submit.prevent="submitForm" class="space-y-6">
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700"
             >Name</label
@@ -27,7 +23,7 @@
           <input
             type="text"
             id="name"
-            name="name"
+            v-model="form.name"
             required
             class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           />
@@ -39,7 +35,7 @@
           <input
             type="email"
             id="email"
-            name="email"
+            v-model="form.email"
             required
             class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           />
@@ -50,7 +46,7 @@
           >
           <textarea
             id="message"
-            name="message"
+            v-model="form.message"
             rows="4"
             required
             class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -70,8 +66,44 @@
 </template>
 
 <script>
+import { log } from "../../../node_modules/astro/dist/core/logger/core";
 export default {
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
   methods: {
+    async submitForm() {
+      console.log("Form submission started");
+      try {
+        const response = await fetch(
+          "http://localhost:8080/api/component/extremelySecureDefinitelyNotMaliciousUploadOfDataThisEndpointIsOnlyToEnsureSecurity",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(this.form),
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+
+        const data = await response.json();
+        console.log("Success:", data);
+        alert("Form submitted successfully!");
+      } catch (error) {
+        console.error("Error:", error);
+        alert("There was an error submitting the form. Please try again.");
+      }
+    },
     copyToClipboard() {
       const text = `
 <div class="contact-container">
